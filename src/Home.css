@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+
+.home {
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background-image: url("./assets/kbhero2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    padding: 60px 8%;
+    color: white;
+
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    line-height: 1.15;
+    text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content h1 span {
+    color: #ff4d4d;
+}
+
+.hero-content p {
+    font-size: 22px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: rgb(240, 0, 0);
+    color: white;
+}
+
+.primary-btn:hover {
+    background: rgb(168, 0, 0);
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    border: 2px solid white;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: #222;
+}
+
+
+/* Features */
+
+.features {
+    padding: 70px 8%;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+.features h2,
+.categories h2 {
+    font-size: 35px;
+    margin-bottom: 45px;
+    color: #222;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.feature-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* About Home */
+
+.about-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 80px 8%;
+}
+
+.about-image {
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)),
+        url("./assets/hapic.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.meat-placeholder {
+    display: none;
+}
+
+.about-content h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.about-content p {
+    color: gray;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+
+/* Categories */
+
+.categories {
+    padding: 80px 8%;
+    background: whitesmoke;
+    text-align: center;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.category-card {
+    background: white;
+    padding: 40px 25px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+}
+
+.category-card h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.category-card a {
+    text-decoration: none;
+    color: rgb(240, 0, 0);
+    font-weight: bold;
+}
+
+
+/* CTA */
+
+.cta {
+    padding: 80px 20px;
+    text-align: center;
+    background: rgb(156, 5, 5);
+    color: white;
+}
+
+.cta h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    color: #ddd;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background: rgb(240, 0, 0);
+    color: white;
+}
+
+.cta-btn:hover {
+    background: rgb(168, 0, 0);
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .feature-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-home {
+        grid-template-columns: 1fr;
+    }
+
+    .category-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 500px;
+        padding: 40px 6%;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-home {
+        padding: 60px 6%;
+    }
+
+    .about-image {
+        height: 300px;
+    }
+
+    .features,
+    .categories {
+        padding: 60px 6%;
+    }
+
+    .cta h2 {
+        font-size: 28px;
+    }
+}

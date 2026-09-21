@@ -1,0 +1,423 @@
+* {
+  box-sizing: border-box;
+}
+
+.meats-page {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  color: #333;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.meats-header {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("./assets/kbhero.jpeg");
+
+  background-size: cover;
+  background-position: center;
+
+  min-height: 350px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  color: white;
+
+  padding: 40px 20px;
+}
+
+.meats-header h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.meats-header p {
+  font-size: 18px;
+  max-width: 650px;
+  line-height: 1.6;
+}
+
+.cart-count {
+  margin-top: 20px;
+
+  background: #b30000;
+
+  padding: 12px 25px;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+}
+
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.meat-categories {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  padding: 30px 20px;
+
+  background: white;
+}
+
+.meat-categories button {
+  border: 2px solid #b30000;
+
+  background: white;
+
+  color: #b30000;
+
+  padding: 10px 25px;
+
+  border-radius: 25px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.meat-categories button:hover {
+  background: #b30000;
+
+  color: white;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.meat-products {
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 60px 25px;
+}
+
+.meat-products > h2 {
+  text-align: center;
+
+  color: #b30000;
+
+  font-size: 34px;
+
+  margin-bottom: 40px;
+}
+
+.meat-container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+
+/* Meat Card */
+
+.meat-card {
+  background: white;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s;
+}
+
+.meat-card:hover {
+  transform: translateY(-8px);
+}
+
+
+/* Image */
+
+.meat-image {
+  width: 100%;
+
+  height: 220px;
+
+  overflow: hidden;
+}
+
+.meat-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.4s;
+}
+
+.meat-card:hover .meat-image img {
+  transform: scale(1.08);
+}
+
+
+/* Details */
+
+.meat-details {
+  padding: 25px;
+}
+
+.meat-type {
+  font-size: 13px;
+
+  color: #b30000;
+
+  font-weight: bold;
+
+  text-transform: uppercase;
+}
+
+.meat-details h3 {
+  font-size: 25px;
+
+  margin: 10px 0;
+}
+
+.meat-details p {
+  color: #666;
+
+  line-height: 1.6;
+
+  min-height: 50px;
+}
+
+
+/* Price */
+
+.meat-price {
+  font-size: 24px;
+
+  color: #b30000;
+
+  font-weight: bold;
+
+  margin: 20px 0;
+}
+
+.meat-price span {
+  font-size: 14px;
+
+  color: #666;
+
+  font-weight: normal;
+}
+
+
+/* Buttons */
+
+.add-cart-btn,
+.buy-btn {
+  width: 100%;
+
+  padding: 12px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  font-weight: bold;
+
+  margin-top: 8px;
+
+  transition: 0.3s;
+}
+
+.add-cart-btn {
+  background: #b30000;
+
+  color: white;
+
+  border: 2px solid #b30000;
+}
+
+.add-cart-btn:hover {
+  background: #800000;
+}
+
+.buy-btn {
+  background: white;
+
+  color: #b30000;
+
+  border: 2px solid #b30000;
+}
+
+.buy-btn:hover {
+  background: #b30000;
+
+  color: white;
+}
+
+
+/* =========================
+   QUALITY
+========================= */
+
+.meat-quality {
+  background: white;
+
+  padding: 70px 25px;
+
+  text-align: center;
+}
+
+.meat-quality > h2 {
+  color: #b30000;
+
+  font-size: 34px;
+
+  margin-bottom: 45px;
+}
+
+.quality-container {
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+.quality-card {
+  padding: 30px 20px;
+
+  background: #f8f8f8;
+
+  border-radius: 10px;
+}
+
+.quality-card > div {
+  font-size: 40px;
+
+  margin-bottom: 15px;
+}
+
+.quality-card h3 {
+  margin-bottom: 10px;
+}
+
+.quality-card p {
+  color: #666;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.meat-cta {
+  background: #222;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 65px 20px;
+}
+
+.meat-cta h2 {
+  font-size: 36px;
+
+  margin-bottom: 15px;
+}
+
+.meat-cta p {
+  color: #ddd;
+
+  font-size: 18px;
+
+  margin-bottom: 25px;
+}
+
+.meat-cta button {
+  background: #b30000;
+
+  border: none;
+
+  color: white;
+
+  padding: 13px 30px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  font-weight: bold;
+}
+
+.meat-cta button:hover {
+  background: #800000;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .meat-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quality-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .meats-header h1 {
+    font-size: 35px;
+  }
+
+  .meat-container {
+    grid-template-columns: 1fr;
+  }
+
+  .quality-container {
+    grid-template-columns: 1fr;
+  }
+
+  .meat-categories {
+    flex-wrap: wrap;
+  }
+}
